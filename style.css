@@ -1,0 +1,142 @@
+ /* Google font link */
+ @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* link for twitter icon logo */
+.fa.fa-twitter::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    content: "";
+    background-color: currentColor;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg viewBox="0 -8 26 30" xmlns="http://www.w3.org/2000/svg"><g><path fill="white" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>') no-repeat center;
+    mask: url('data:image/svg+xml;utf8,<svg viewBox="0 -8 26 30" xmlns="http://www.w3.org/2000/svg"><g><path fill="white" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>') no-repeat center;
+    background-position: center 3px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+}
+.profile-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    background-color: #4070f4;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 17px;
+    font-weight: 400;
+}
+.profile-card .icons-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.icons-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+}
+.buttons .button{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 25px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+.buttons .button:hover {
+    background-color: #0e4bf1;
+}
+.profile-card .detalis{
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+.detalis .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.data i{
+    font-size: 18px ;
+    margin-right: 5px;
+}
+.data:last-child{
+    border-right: none;
+}
